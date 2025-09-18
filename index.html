@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <input type="text" id="password" readonly >
+                <i class="far fa-copy" id="copy-btn"></i>
+        </div>
+
+        <div class="option-container">
+            <div class="option">
+                <label for="length">Password length</label>
+                <div class="length-variables">
+                    <input type="range" value="12" min="6" max="24" id="length">
+                    <span id="length-value">12</span>
+                </div>
+            </div>
+            <!-- UPPERCASE -->
+             <div class="option">
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" checked id="uppercase">
+             </div>
+             <!-- LOWERCASE -->
+               <div class="option">
+                <label for="lowercase">Include Lowercase</label>
+                <input type="checkbox" checked id="lowercase">
+              </div>
+              <!-- NUMBERS -->
+                 <div class="option">
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" checked id="numbers">
+              </div>
+              <!-- SYMBOL -->
+                 <div class="option">
+                <label for="symbol">Include symbol</label>
+                <input type="checkbox" checked id="symbol">
+              </div>
+        </div>
+
+        <button id="generate-button">
+            <i class="fas fa-key"></i>
+            Generate Button
+        </button>
+        <div class="strength-container">
+            <p>Password Strength: <span id="strength-label"></span></p>
+
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+        </div>
+
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
