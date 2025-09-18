@@ -127,7 +127,7 @@ lengthSlider.addEventListener("input", ()=> {
         setTimeout(() => {
             copyBtn.classList.remove("fas", "fa-check");
             copyBtn.classList.add("far", "fa-copy");
-            copyBtn.style.color = "none";
+            copyBtn.style.color = "";
         }, 1500);
     }
     window.addEventListener("DOMContentLoaded", makePassword());
