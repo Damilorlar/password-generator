@@ -110,10 +110,8 @@ lengthSlider.addEventListener("input", ()=> {
     // COPY TO CLIPBOARD
     copyBtn.addEventListener("click", () => {
         if (!passwordInput.value) {
-            return;
-            
+            return;    
         }
-
             navigator.clipboard.writeText(passwordInput.value)
             .then(() => showCopySuccess())
             .catch((error) => console.log("Failed to copy password", error));
